@@ -32,7 +32,7 @@ const MessageComponent = React.forwardRef(function MessagesDisplay({messages}, r
 
   return (
     <div ref={containerRef} role="log">
-      {messages.map((message, index, array) => (``
+      {messages.map((message, index, array) => (
         <div key={message.id}>
           <strong>{message.author}</strong>: <span>{message.content}</span>
           {array.length - 1 === index ? null : <hr />}
